@@ -35,7 +35,7 @@ We will be using the [R](https://www.r-project.org/) statistical computing langu
 <!--    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/under_construction.jpg" alt="Quantitative Inference in Brain & Cognitive Sciences, Spring 2025" style="width: 60%; max-width:300px; height:auto; padding-top:10px; padding-bottom:20px;"> -->
     </div>
 
-The schedule is presently **under construction**. In preparation for the class on Wednesday February 5, please review the following concepts:
+The schedule is presently **under construction**. On the first day, **Monday February 3**, I will go over some logistics for the class, and introduce a set of core concepts in probability theory that are central to quantitative inference in all sciences and that we will rely on throughout the semester. These include:
 
  - [Probability space](https://en.wikipedia.org/wiki/Probability_space)
  - [Random variable](https://en.wikipedia.org/wiki/Random_variable)
@@ -47,8 +47,8 @@ The schedule is presently **under construction**. In preparation for the class o
  - Discrete vs. continuous [probability distributions](https://en.wikipedia.org/wiki/Probability_distribution)
  - [Mean](https://en.wikipedia.org/wiki/Mean), [variance](https://en.wikipedia.org/wiki/Variance), [covariance](https://en.wikipedia.org/wiki/Covariance), and [correlation](https://en.wikipedia.org/wiki/Correlation)
  
-The links above are to Wikipedia pages but please do whatever additional resource-finding of your own, use of Generative AI, etc., you find most appropriate for your own learning. Reading Chapters 2–3 of my [book draft](https://www.mit.edu/~rplevy/pmsl_textbook/text.html) will give you most of this as well.
+In preparation for the class on **Wednesday February 5**, please review these concepts; the links above are to Wikipedia pages but please do whatever additional resource-finding of your own, use of Generative AI, etc., you find most appropriate for your own learning. Reading Chapters 2–3 of my [book draft](https://www.mit.edu/~rplevy/pmsl_textbook/text.html) will give you most of this as well.
 
-Looking farther ahead, we will be moving fairly soon to covering the basics of causal inference, for which the readings are Chapters 1–6 of [Barrett et al., 2025](https://www.r-causal.org/) and Chapters 1–3 of [Hernan & Robins, 2020/2025](https://miguelhernan.org/whatifbook), so you can start reading that.
+Looking farther ahead, we will be moving fairly soon to covering the basics of [causal inference](https://en.wikipedia.org/wiki/Causal_inference), for which the readings are Chapters 1–6 of [Barrett et al., 2025](https://www.r-causal.org/) and Chapters 1–3 of [Hernan & Robins, 2020/2025](https://miguelhernan.org/whatifbook), so you can start reading these.
 
 Use this initial time to tune your R skills as well!
