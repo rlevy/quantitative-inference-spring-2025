@@ -8,9 +8,9 @@ title: Logistics
 ## Class information
 
 |-------------------------------|---------------------------------------------------|
-| Lecture Times                 | Tuesdays & Thursdays 9–10:30am
-| Lecture Location              | [46-3310](http://whereis.mit.edu/?go=46)
-| Syllabus                      | [https://rlevy.github.io/statistical-inference-spring-2024/](https://rlevy.github.io/statistical-inference-spring-2024/)
+| Lecture Times                 | Mondays & Wednesdays 2–3:30pm
+| Lecture Location              | [4-237](http://whereis.mit.edu/?go=4)
+| Syllabus                      | [https://rlevy.github.io/quantitative-inference-spring-2025/](https://rlevy.github.io/quantitative-inference-spring-2025/)
 
 ## Instructional staff
 
@@ -20,7 +20,7 @@ title: Logistics
 
 ## Class organization
 
-The in-class content for this course will consist of lectures, interactive discussions, and practice with software that implements the techniques covered in class
+The in-class content for this course will consist of lectures, interactive discussions, and practice with software that implements the techniques covered in class.
 
 ## Requirements & grading
 
@@ -36,18 +36,18 @@ Active participation in the class is also encouraged and taken into account in b
 
 ### Collaboration policy
 
-We strongly encourage you to study, work together, and collaborate with classmates. This includes reviewing and discussing readings, pre-recorded lectures, and in-class exercises, discussing homework assignments (psets), and studying to prepare for exams. However, you must write up each homework assignment on your own.  Additionally, please list the people you have discussed the pset with at the top of your assignment.
+I strongly encourage you to study, work together, and collaborate with classmates. This includes reviewing and discussing readings, pre-recorded lectures, and in-class exercises, discussing homework assignments (psets), and studying to prepare for exams. However, you must write up each homework assignment on your own.  Additionally, please list the people you have discussed the pset with at the top of your assignment.
 
 Class projects are fully collaborative and write-ups should be done jointly. 
 
 ### Policy on use of generative AI
 
-Generative AI refers to tools that can generate media such as text, code, images, video, and sound, generally in response to inputs such as textual prompts or queries. In our view, using generative AI (e.g. ChatGPT) as part of creative and intellectual processes is becoming an important skill in contemporary society. I encourage you in general to use generative AI tools for the work in this course in whatever ways you believe best assist your learning and growth.  (We the instructors are using these tools for the same purposes!) Remember though that **these tools cannot be trusted to reliably provide accurate content.** You are ultimately responsible for your own understanding of the material we cover, and for demonstrating that understanding.
+Generative AI refers to tools that can generate media such as text, code, images, video, and sound, generally in response to inputs such as textual prompts or queries. In my view, using generative AI (e.g. ChatGPT) as part of creative and intellectual processes is becoming an important skill in contemporary society. I encourage you in general to use generative AI tools for the work in this course in whatever ways you believe best assist your learning and growth.  (I am using these tools for the same purposes!) Remember though that **these tools cannot be trusted to reliably provide accurate content.** You are ultimately responsible for your own understanding of the material I cover, and for demonstrating that understanding.
 
 Please do share your experiences using generative AI to help learn and understand class related material. It's very helpful to hear about your experiences!
 
 Since the generative AI landscape is changing so rapidly, this policy
-is subject to change mid-semester. If we change it, we'll announce the
+is subject to change mid-semester. If I change it, I'll announce the
 change.
 
 

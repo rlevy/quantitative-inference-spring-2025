@@ -1,5 +1,18 @@
 | Week of semester | Day       | Topic                                                                 | Psets                                              |
 |------------------+-----------+-----------------------------------------------------------------------+----------------------------------------------------|
+| Week 1           | Mon Feb 3 | Introduction                                                          |                                                    |
+|                  | Wed Feb 5 | Introduction to causal models                                         |                                                    |
+| Week 2           | Mon       | Causal models continued                                               | [Pset 1](assets/assignments/pset_1.pdf) out        |
+|                  | Th Apr 11 | Finish causal models plus elementary parameter estimation             |                                                    |
+| Week 3           | Tu Apr 16 | Confidence intervals, hypothesis testing,  Monte Carlo                | Pset 1 due                                         |
+|                  | Th Apr 18 | MCMC and intro to GLMs                                                | [Pset 2](assets/assignments/pset_2/pset_2.pdf) out |
+| Week 11          | Tu Apr 23 | Linear regression                                                     |                                                    |
+|                  | Th Apr 25 | GLMs, effect size, power analysis, preregistration, repeated measures | Pset 2 due (Fri Apr 26)                            |
+| Week 12          | Tu Apr 30 | Mixed models I                                                        | [Pset 3](assets/assignments/pset_3/pset_3.pdf) out |
+|                  | Th May 2  | Mixed models II                                                       |                                                    |
+| Week 13          | Tu May 7  | Mixed models III                                                      |                                                    |
+|                  | Th May 9  | Mixed models IV                                                       | Pset 3 due; Pset 4 out                             |
+| Week 14          | Tu May 14 | Roger away                                                            | Final projects or Pset 4 due (can be late)         |
 | Week 8           | Tu Apr 2  | Introduction                                                          |                                                    |
 |                  | Th Apr 4  | Introduction to causal models                                         |                                                    |
 | Week 9           | Tu Apr 9  | Causal models continued                                               | [Pset 1](assets/assignments/pset_1.pdf) out        |

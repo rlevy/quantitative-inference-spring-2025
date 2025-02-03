@@ -5,7 +5,7 @@ title: Syllabus
 
 ## Class Description
 
-  As the empirical domain of brain & cognitive sciences research continues to grow, the data used for scientific inference have become more diverse and complex. These data often require complex analytic techniques not extensively covered in core introductory classes, and the skill to use these techniques appropriately in practice to yield scientifically valid inferences and insights. This course in the second half of spring 2024 builds on a foundational understanding and practical competence in concepts in probabilistic and statistical inference to be obtained inthe first half of the semester by covering key analytic techniques including causal inference, hierarchical/multilevel regression, and high-dimensional/multivariate methods. I place special emphasis on conceptual understanding of statistical techniques and on ensuring alignment between one's scientific questions and how statistical models are formulated and used in data analysis.
+  As the empirical domain of brain & cognitive sciences research continues to grow, the data used for scientific inference have become more diverse and complex. These data often require complex analytic techniques not extensively covered in core introductory classes, and the skill to use these techniques appropriately in practice to yield scientifically valid inferences and insights. This spring 2025 course build a foundational understanding and practical competence in concepts in quantitative inference to be obtained inthe first half of the semester by covering key analytic techniques including probability theory, causal inference, Bayesian and frequentist statistical methods, regression, hierarchical/multilevel models, nonparametric models, and high-dimensional/multivariate methods. I place special emphasis on conceptual understanding of quantitative techniques and on ensuring alignment between one's scientific questions and how models are formulated and used in data analysis.
 
 
 ## Class organization
@@ -14,9 +14,13 @@ Class sessions will include a combination of lecture, interactive discussion, re
 
 ## Intended Audience
 
-Class content will be of interest for students, postdocs, faculty, and researchers in brain & cognitive sciences, psychology, linguistics, and potentially for sister disciplines including computer science, political science, sociology, economics, and other social science fields. Content covered in the first half of 9.073, or equivalent, is a prerequisite.
+Class content will be of interest for students, postdocs, faculty, and researchers in brain & cognitive sciences, psychology, linguistics, and potentially for sister disciplines including computer science, political science, sociology, economics, and other social science fields.
 
-## Readings & Textbooks
+## Prerequisites
+
+There are no formal prerequisites, but the class uses linear algebra, calculus, and involves coding, so if you don't have background in all of these you may find it moves briskly.
+
+## Readings
 
 The readings list will be developed over the course of the semester, and will draw on a variety of readings from multiple fields. There is no ready-made textbook customized to the content we'll be covering, so keep in mind that different readings may vary in the terminology, notation, and framing used for the same fundamental concepts. I also endeavor to provide written lecture notes throughout the semester.
 
@@ -28,6 +32,23 @@ We will be using the [R](https://www.r-project.org/) statistical computing langu
 ## Schedule
 
 <div style="text-align:center;">
-<!--    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/under_construction.jpg" alt="Statistical Inference in Brain & Cognitive Sciences, Spring 2024" style="width: 60%; max-width:300px; height:auto; padding-top:10px; padding-bottom:20px;"> -->
+<!--    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/under_construction.jpg" alt="Quantitative Inference in Brain & Cognitive Sciences, Spring 2025" style="width: 60%; max-width:300px; height:auto; padding-top:10px; padding-bottom:20px;"> -->
     </div>
 
+The schedule is presently **under construction**. In preparation for the class on Wednesday February 5, please review the following concepts:
+
+ - [Probability space](https://en.wikipedia.org/wiki/Probability_space)
+ - [Random variable](https://en.wikipedia.org/wiki/Random_variable)
+ - [Joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution)
+ - [Marginal probability distribution](https://en.wikipedia.org/wiki/Marginal_distribution)
+ - [Conditional probability](https://en.wikipedia.org/wiki/Conditional_probability)
+ - [The Chain Rule](https://en.wikipedia.org/wiki/Chain_rule_(probability))
+ - [Bayes' Rule](https://en.wikipedia.org/wiki/Bayes'_theorem)
+ - Discrete vs. continuous [probability distributions](https://en.wikipedia.org/wiki/Probability_distribution)
+ - [Mean](https://en.wikipedia.org/wiki/Mean), [variance](https://en.wikipedia.org/wiki/Variance), [covariance](https://en.wikipedia.org/wiki/Covariance), and [correlation](https://en.wikipedia.org/wiki/Correlation)
+ 
+The links above are to Wikipedia pages but please do whatever additional resource-finding of your own, use of Generative AI, etc., you find most appropriate for your own learning. Reading Chapters 2–3 of my [book draft](https://www.mit.edu/~rplevy/pmsl_textbook/text.html) will give you most of this as well.
+
+Looking farther ahead, we will be moving fairly soon to covering the basics of causal inference, for which the readings are Chapters 1–6 of [Barrett et al., 2025](https://www.r-causal.org/) and Chapters 1–3 of [Hernan & Robins, 2020/2025](https://miguelhernan.org/whatifbook), so you can start reading that.
+
+Use this initial time to tune your R skills as well!

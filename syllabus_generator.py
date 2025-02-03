@@ -83,37 +83,40 @@ def getVal(dict,key):
 with open('index.markdown','w') as outfile:
     with open('assets/syllabus/syllabus_top.markdown','r') as syllabus_top:
         outfile.write(syllabus_top.read())
-    
-    with open('assets/syllabus/syllabus_table.org','r') as order_file:
-        syllabus_sketch = parse_md_table(order_file.read())
-        print(syllabus_sketch)
-        print(generate_md_table(syllabus_sketch))
-        with open('class_sessions.yml','r') as file:
-            lectures = yaml.safe_load(file)['lectures']
 
-            print(lectures)
-            print(type(lectures))
 
-            new_rows = []
-            for row in syllabus_sketch:
-                print("Row: " + str(row))
-                print(type(row))
-                print(row.keys())
-                print("Topic: " + str(row['Topic']))
-                new_row = {'Week': row['Week of semester'],
-                           'Day': row['Day'],
-                           'Topic': getVal(lectures[row['Topic']],'topic'),
-                           #'Videos': getVal(lectures[row['Topic']],'videos'),
-                           'Slides': getVal(lectures[row['Topic']],'slides'),
-                           'Readings': getVal(lectures[row['Topic']],'readings'),
-                           #'In-class handouts and exercises': row['In-class materials'],
-                           #'Optional videos': getVal(lectures[row['Topic']],'optional videos'),
-                           'Related readings': getVal(lectures[row['Topic']],'related readings'),
-                           'Problem sets': row['Psets']}
-                new_rows.append(new_row)
-            print(new_rows)
-            outfile.write(generate_md_table(new_rows))
-    outfile.close()
+    include_schedule = False
+    if include_schedule:
+        with open('assets/syllabus/syllabus_table.org','r') as order_file:
+            syllabus_sketch = parse_md_table(order_file.read())
+            print(syllabus_sketch)
+            print(generate_md_table(syllabus_sketch))
+            with open('class_sessions.yml','r') as file:
+                lectures = yaml.safe_load(file)['lectures']
+
+                print(lectures)
+                print(type(lectures))
+
+                new_rows = []
+                for row in syllabus_sketch:
+                    print("Row: " + str(row))
+                    print(type(row))
+                    print(row.keys())
+                    print("Topic: " + str(row['Topic']))
+                    new_row = {'Week': row['Week of semester'],
+                               'Day': row['Day'],
+                               'Topic': getVal(lectures[row['Topic']],'topic'),
+                               #'Videos': getVal(lectures[row['Topic']],'videos'),
+                               'Slides': getVal(lectures[row['Topic']],'slides'),
+                               'Readings': getVal(lectures[row['Topic']],'readings'),
+                               #'In-class handouts and exercises': row['In-class materials'],
+                               #'Optional videos': getVal(lectures[row['Topic']],'optional videos'),
+                               'Related readings': getVal(lectures[row['Topic']],'related readings'),
+                               'Problem sets': row['Psets']}
+                    new_rows.append(new_row)
+                print(new_rows)
+                outfile.write(generate_md_table(new_rows))
+        outfile.close()
 
             
 
