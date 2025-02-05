@@ -47,7 +47,7 @@ The schedule is presently **under construction**. On the first day, **Monday Feb
  - Discrete vs. continuous [probability distributions](https://en.wikipedia.org/wiki/Probability_distribution)
  - [Mean](https://en.wikipedia.org/wiki/Mean), [variance](https://en.wikipedia.org/wiki/Variance), [covariance](https://en.wikipedia.org/wiki/Covariance), and [correlation](https://en.wikipedia.org/wiki/Correlation)
  
-In preparation for the class on **Wednesday February 5**, please review these concepts; the links above are to Wikipedia pages but please do whatever additional resource-finding of your own, use of Generative AI, etc., you find most appropriate for your own learning. Reading Chapters 2–3 of my [book draft](https://www.mit.edu/~rplevy/pmsl_textbook/text.html) will give you most of this as well.
+In preparation for the class on **Wednesday February 5**, please review these concepts; the links above are to Wikipedia pages but please do whatever additional resource-finding of your own, use of Generative AI, etc., you find most appropriate for your own learning. You can also review the [slides](assets/slides/2025-02-05-intro-probability-slides.pdf) I used on Monday. Reading Chapters 2–3 of my [book draft](https://www.mit.edu/~rplevy/pmsl_textbook/text.html) will give you most of this as well.
 
 Looking farther ahead, we will be moving fairly soon to covering the basics of [causal inference](https://en.wikipedia.org/wiki/Causal_inference), for which the readings are Chapters 1–6 of [Barrett et al., 2025](https://www.r-causal.org/) and Chapters 1–3 of [Hernan & Robins, 2020/2025](https://miguelhernan.org/whatifbook), so you can start reading these.
 
