@@ -53,4 +53,7 @@ Looking farther ahead, we will be moving fairly soon to covering the basics of [
 
 Here are the slides I used on Wednesday Feb 5: the [final slides for our intro to probability theory](assets/slides/2025-02-05-final-probability-slides.pdf) and [intro to causal inference](assets/slides/2025-02-05-intro-to-causal-inference-with-builds.pdf).
 
+Here is [the first homework assignment](assets/assignments/pset_1/pset_1.pdf), due Friday, February 14.
+
 Use this initial time to tune your R skills as well!
+
