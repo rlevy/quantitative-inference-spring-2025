@@ -55,5 +55,9 @@ Here are the slides I used on Wednesday Feb 5: the [final slides for our intro t
 
 Here is [the first homework assignment](assets/assignments/pset_1/pset_1.pdf), due Friday, February 14.
 
+Slides for Monday Feb 10: [with builds](assets/slides/2025-02-10-intro-causal-inference-with-builds.pdf) and [without builds](assets/slides/2025-02-10-intro-causal-inference-no-builds.pdf)
+
+Slides for Wednesday Feb 12: [with builds](assets/slides/2025-02-12-causal-inference-continued-with-builds.pdf) and [without builds](assets/slides/2025-02-12-causal-inference-continued-no-builds.pdf)
+
 Use this initial time to tune your R skills as well!
 
