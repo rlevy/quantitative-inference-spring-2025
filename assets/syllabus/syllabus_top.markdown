@@ -59,5 +59,8 @@ Slides for Monday Feb 10: [with builds](assets/slides/2025-02-10-intro-causal-in
 
 Slides for Wednesday Feb 12: [with builds](assets/slides/2025-02-12-causal-inference-continued-with-builds.pdf) and [without builds](assets/slides/2025-02-12-causal-inference-continued-no-builds.pdf)
 
+Slides for Tuesday Feb 18 (including Bayes Net material covered 2/12): (causal) Bayes Nets: [with builds](assets/slides/2025-02-18-causal-Bayes-nets-with-builds.pdf) and [without builds](assets/slides/2025-02-18-causal-Bayes-nets-no-builds.pdf); parameter estimation, confidence intervals, hypothesis testing: [with builds](assets/slides/2025-02-18-parameter-estimation-with-builds.pdf) and [without builds](assets/slides/2025-02-18-parameter-estimation-no-builds.pdf); 
+
+
 Use this initial time to tune your R skills as well!
 
