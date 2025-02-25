@@ -63,7 +63,7 @@ Slides for Tuesday Feb 18 (including Bayes Net material covered 2/12): (causal) 
 
 Slides for Wednesday Feb 19: confidence intervals and hypothesis testing: [with builds](assets/slides/2025-02-19-confidence-intervals-hypothesis-testing-and-Monte-Carlo-with-builds.pdf) and [without builds](assets/slides/2025-02-19-confidence-intervals-hypothesis-testing-and-Monte-Carlo-no-builds.pdf)
 
-Slides for Monday Feb 24: Monte Carlo: [with builds](assets/slides/2025-02-24-Monte-Carlo-with-builds.pdf) and [without builds](assets/slides/2025-02-24-Monte-Carlo-no-builds.pdf)
+Slides for Monday Feb 24: Monte Carlo: [with builds](assets/slides/2025-02-24-Monte-Carlo-with-builds.pdf) and [without builds](assets/slides/2025-02-24-Monte-Carlo-no-builds.pdf). R file from simple Monte Carlo practicum is [here](assets/resources/Monte-Carlo.R).
 
 Use this initial time to tune your R skills as well!
 
