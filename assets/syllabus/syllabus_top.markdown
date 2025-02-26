@@ -65,5 +65,7 @@ Slides for Wednesday Feb 19: confidence intervals and hypothesis testing: [with 
 
 Slides for Monday Feb 24: Monte Carlo: [with builds](assets/slides/2025-02-24-Monte-Carlo-with-builds.pdf) and [without builds](assets/slides/2025-02-24-Monte-Carlo-no-builds.pdf). R file from simple Monte Carlo practicum is [here](assets/resources/Monte-Carlo.R).
 
+Slides for Wednesday Feb 26: [Generalized linear models](assets/slides/2025-02-26-generalized-linear-models.pdf)
+
 Use this initial time to tune your R skills as well!
 
