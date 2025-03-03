@@ -67,5 +67,8 @@ Slides for Monday Feb 24: Monte Carlo: [with builds](assets/slides/2025-02-24-Mo
 
 Slides for Wednesday Feb 26: [Generalized linear models](assets/slides/2025-02-26-generalized-linear-models.pdf)
 
+Slides for Monday March 3: [Categorical predictors, interactions, logistic regression](assets/slides/2025-03-03-categorical-predictors-interactions-logistic-regression.pdf)
+
+
 Use this initial time to tune your R skills as well!
 
