@@ -16,7 +16,7 @@ title: Logistics
 
 |---------------------------+----------------------------------------------------------------------------------------------------------------------------------|
 | Instructor  | Office hours |
-| [Roger Levy](http://www.mit.edu/~rplevy) ([rplevy@mit.edu](mailto:rplevy@mit.edu))    | TBD              |
+| [Roger Levy](http://www.mit.edu/~rplevy) ([rplevy@mit.edu](mailto:rplevy@mit.edu))    | Mondays 11am–12pm, [46-3033](https://whereis.mit.edu/?go=46)              |
 
 ## Class organization
 
