@@ -69,6 +69,11 @@ Slides for Wednesday Feb 26 and Monday March 3: [Generalized linear models](asse
 
 Slides for Wednesday March 5: [Categorical predictors, interactions, logistic regression](assets/slides/2025-03-05-categorical-predictors-interactions-logistic-regression.pdf)
 
+Slides for Monday March 10: [Why linear models?](assets/slides/2025-03-10-why-linear-models.pdf)
+
+Slides for Wednesday March 12: [Mixed effects models](2025-03-12-mixed-effects-models.pdf)
+
+Slides for Monday March 10: compact notation and how to "keep it maximal": [with builds](assets/slides/2025-03-17-with-builds.pdf), [without builds](2025-03-17-without-builds.pdf)
 
 R code for Wednesday March 19 is [here](assets/resources/running_example_mixed_logit_credit_assignment.R). Directory with Stan examples is [here](assets/resources/2025-03-19-stan) Slides: [with builds](assets/slides/2025-03-19-with-builds.pdf); [no builds](assets/slides/2025-03-19-no-builds.pdf)
 
