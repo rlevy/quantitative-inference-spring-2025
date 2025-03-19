@@ -71,7 +71,7 @@ Slides for Wednesday March 5: [Categorical predictors, interactions, logistic re
 
 Slides for Monday March 10: [Why linear models?](assets/slides/2025-03-10-why-linear-models.pdf)
 
-Slides for Wednesday March 12: [Mixed effects models](2025-03-12-mixed-effects-models.pdf)
+Slides for Wednesday March 12: [Mixed effects models](assets/slides/2025-03-12-mixed-effects-models.pdf)
 
 Slides for Monday March 10: compact notation and how to "keep it maximal": [with builds](assets/slides/2025-03-17-with-builds.pdf), [without builds](2025-03-17-without-builds.pdf)
 
