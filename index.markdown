@@ -70,5 +70,8 @@ Slides for Wednesday Feb 26 and Monday March 3: [Generalized linear models](asse
 Slides for Wednesday March 5: [Categorical predictors, interactions, logistic regression](assets/slides/2025-03-05-categorical-predictors-interactions-logistic-regression.pdf)
 
 
+R code for Wednesday March 19 is [here](assets/resources/running_example_mixed_logit_credit_assignment.R).
+
+
 Use this initial time to tune your R skills as well!
 
