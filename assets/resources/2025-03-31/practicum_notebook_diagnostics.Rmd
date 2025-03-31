@@ -1,0 +1,92 @@
+
+---
+title: "Bayesian Mixed-Effects Modeling Practicum"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(lme4)
+library(brms)
+library(bayesplot)
+library(tidyverse)
+library(ggplot2)
+```
+
+## Load the Data
+
+```{r}
+data("sleepstudy", package = "lme4")
+glimpse(sleepstudy)
+sleepstudy$Response <- 1/sleepstudy$Reaction*1000
+```
+
+## Compare against paper visualization
+
+```{r}
+sleepstudy %>%
+  group_by(Days) %>%
+  summarize(Response=mean(Response))
+```
+
+## visualize individual-specific performance trajectories
+```{r}
+ggplot(sleepstudy,aes(x=Days,y=Response,color=Subject)) + 
+  geom_line() +
+  geom_point() +
+  theme_bw()
+```
+
+## lme4 fit -- point estimate. Note that if we were to be really thorough about things, we might use REML=TRUE to improve our estimate of the random effects covariance matrix. But it won't matter much (you can test it for yourself).
+
+```{r}
+summary(m.lme4 <- lmer(Response ~ Days + (Days | Subject),data=sleepstudy,REML=F))
+```
+
+## Fit a Hierarchical Model with brms, and save the auto-generated Stan code to file for inspection.
+
+```{r}
+print(system.time(fit <- brm(Reaction ~ Days + (Days | Subject), data = sleepstudy, 
+           chains = 4, iter = 2000, seed = 123, cores = 4)))
+summary(fit)
+stan_code <- stancode(fit)
+writeLines(stan_code,"/tmp/model.stan")
+```
+
+
+## illustration of four chains for a single parameter
+```{r}
+draws_df <- as_draws_df(fit)
+#chain1 <- filter(draws_df,.chain==1)
+ggplot(filter(draws_df,.iteration<100), aes(x = .iteration, y = b_Days,color=as.factor(.chain))) +
+  geom_line() +
+  labs(title = paste("Trace plot for b_Days"),
+       x = "Iteration", y = "Value") +
+  theme_bw()
+```
+
+
+
+## Posterior Diagnostics: Rhat, ESS, and inspecting traceplots and posterior predictives
+
+
+```{r}
+fit_summary <- summary(fit)
+fit_summary$fixed[, c("Estimate", "Rhat", "Bulk_ESS", "Tail_ESS")]
+```
+
+### Traceplots
+
+```{r}
+mcmc_trace(as.array(fit), pars = c("b_Intercept", "b_Days"))
+```
+
+
+
+## Posterior Predictive Check
+
+```{r}
+pp_check(fit, type = "dens_overlay")
+```

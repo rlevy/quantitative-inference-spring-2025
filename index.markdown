@@ -77,6 +77,8 @@ Slides for Monday March 10: compact notation and how to "keep it maximal": [with
 
 R code for Wednesday March 19 is [here](assets/resources/running_example_mixed_logit_credit_assignment.R). Directory with Stan examples is [here](assets/resources/2025-03-19-stan) Slides: [with builds](assets/slides/2025-03-19-with-builds.pdf); [no builds](assets/slides/2025-03-19-no-builds.pdf)
 
+Monday March 31: slides [with builds](assets/slides/2025-03-31-with-builds.pdf) and [without builds](assets/slides/2025-03-31-without-builds.pdf); [R Markdown notebook](assets/resources/2025-03-31/practicum_notebook_diagnostics.Rmd)
+
 
 Use this initial time to tune your R skills as well!
 
