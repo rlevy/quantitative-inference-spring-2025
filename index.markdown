@@ -79,6 +79,7 @@ R code for Wednesday March 19 is [here](assets/resources/running_example_mixed_l
 
 Monday March 31: slides [with builds](assets/slides/2025-03-31-with-builds.pdf) and [without builds](assets/slides/2025-03-31-without-builds.pdf); [R Markdown notebook](assets/resources/2025-03-31/practicum_notebook_diagnostics.Rmd)
 
+Wednesday April 2: slides [with builds](assets/slides/2025-04-02-with-builds.pdf) and [without builds](assets/slides/2025-04-02-without-builds.pdf)
 
-Use this initial time to tune your R skills as well!
+
 
