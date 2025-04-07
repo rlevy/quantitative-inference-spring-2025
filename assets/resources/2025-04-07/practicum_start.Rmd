@@ -1,0 +1,86 @@
+---
+title: "Practicum: causal inference with an observational dataset
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(touringplans)
+library(ggplot2)
+```
+
+## Dataset prep commands in chapter 7
+```{r}
+seven_dwarfs_9 <- seven_dwarfs_train |>
+  # eligibility criteria
+  filter(year(park_date) == 2018) |>
+  # get hour from wait
+  mutate(hour = hour(wait_datetime)) |>
+  # outcome definition:
+  # calculate average wait minutes by date and hour
+  group_by(park_date, hour) |>
+  summarize(
+    across(
+      c(
+        wait_minutes_posted,
+        wait_minutes_actual
+      ),
+      \(.x) mean(.x, na.rm = TRUE),
+      .names = "{.col}_avg"
+    ),
+    .groups = "drop"
+  ) |>
+  # replace NaN with NA
+  # this occurs when there is a mean of a
+  # vector of length 0, e.g., no observation for the hour
+  mutate(across(
+    c(
+      wait_minutes_posted_avg,
+      wait_minutes_actual_avg
+    ),
+    \(.x) if_else(is.nan(.x), NA, .x)
+  )) |>
+  # outcome definition:
+  # only keep the average wait time between 9 and 10
+  filter(hour == 9)
+
+parks_metadata <- parks_metadata_raw |>
+  ## exposure definition, assignment procedure,
+  ## and analysis plan: select the ID, exposure, and confounders
+  select(
+    # id
+    park_date = date,
+    # exposure
+    park_extra_magic_morning = mkemhmorn,
+    # confounders
+    park_ticket_season = wdw_ticket_season,
+    park_temperature_high = wdwmaxtemp,
+    park_close = mkclose
+  ) |>
+  ## eligibility criteria: days in 2018
+  filter(year(park_date) == 2018)
+
+seven_dwarfs_9 <- seven_dwarfs_9 |>
+  left_join(parks_metadata, by = "park_date")
+
+seven_dwarfs_9
+```
+
+## example chapter 7 visualization
+```{r}
+ggplot(
+  seven_dwarfs_9,
+  aes(
+    x = factor(park_close),
+    group = factor(park_extra_magic_morning),
+    fill = factor(park_extra_magic_morning)
+  )
+) +
+  geom_bar(position = "fill", alpha = .8) +
+  labs(
+    fill = "Extra Magic Morning",
+    x = "Time of Park Close"
+  ) +
+  theme(panel.grid.major.x = element_blank())
+```
