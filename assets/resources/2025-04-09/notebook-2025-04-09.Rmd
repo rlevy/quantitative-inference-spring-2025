@@ -1,0 +1,111 @@
+---
+  title: "Natural Stories model analyses -- from Boyce & Levy 2023, repo at https://github.com/vboyce/natural-stories-maze"
+output:
+  html_document:
+  toc: true
+---
+
+# Step 0:
+
+Clone or download the repository https://github.com/vboyce/natural-stories-maze
+
+# Step 1: Load tidyverse library and set working directory
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = FALSE, warning=F, message=F)
+library(tidyverse)
+my.root.dir <- "~/Documents/repos/natural-stories-maze/"
+knitr::opts_knit$set(root.dir = my.root.dir) # edit for wherever you put the repository. You may also have to just run setwd(my.root.dir) directly.
+```
+
+# Step 2: Prep data
+
+```{r maze-participants}
+
+data <- read_rds("Data/cleaned.rds")
+
+data_filt <- data %>% filter(native %in% c("ENG", "English", "ENGLISH", "english")) #I peeked at what people put that semantically maps to english
+
+data_error_summ <- data_filt %>%
+  mutate(correct.num=ifelse(correct=="yes", 1,0)) %>%
+  group_by(subject) %>%
+  filter(type!="practice") %>%
+  filter(rt<5000) %>%
+  dplyr:::summarize(pct_correct=mean(correct.num)) %>%
+  ungroup() %>%
+  mutate(is.attentive=ifelse(pct_correct>.8, T,F)) %>%
+  select(subject, is.attentive)
+
+data_low_error <- data_filt %>%
+  left_join(data_error_summ, by="subject") %>%
+  filter(is.attentive) %>%
+  filter(type!="practice")
+
+data_error_free <- data_low_error %>%
+  mutate(word_num_mistake=ifelse(correct=="no", word_num,NA)) %>%
+  group_by(sentence, subject) %>% fill(word_num_mistake) %>% ungroup() %>%
+  mutate(after_mistake=word_num-word_num_mistake,
+         after_mistake=ifelse(is.na(after_mistake),0,after_mistake)) %>%
+  filter(correct=="yes") %>%
+  filter(!after_mistake %in% c(1,2))
+
+data_no_first <- data_error_free %>% filter(word_num!=0)
+
+data_ready <- data_no_first %>% filter(rt>100 & rt<5000) %>%
+  select(subject, word_num, word, rt, sentence, type)
+
+data_pre_error <- data_no_first %>% filter(rt>100 & rt<5000) %>%
+  filter(after_mistake==0) %>%
+  select(subject, word_num, word, rt, sentence, type) 
+
+data_stories <- data_ready %>% select(type, subject) %>%
+  unique() %>%
+  group_by(type) %>%
+  tally()
+```
+
+```{r labels}
+labs <- read_rds("Prep_code/natural_stories_surprisals.rds") %>%
+  left_join(read_delim("Materials/natural_stories_sentences.tsv", delim="\t")) %>%
+  select(word_num=Word_In_Sentence_Num, word=Word, sentence=Sentence, everything())
+
+select_labs <- labs %>%
+  mutate(across(ends_with("surp"),~ifelse(ngram_token_count==1 & txl_token_count==1 & grnn_token_count==1 & gpt_token_count==1 & word_num>0, .x, NA))) %>%
+  select(-ends_with("token_count")) %>%
+  mutate(txl_center=txl_surp-mean(txl_surp, na.rm=T),
+         ngram_center=ngram_surp-mean(ngram_surp, na.rm=T),
+         grnn_center=grnn_surp-mean(grnn_surp, na.rm=T),
+         freq_center=freq-mean(freq, na.rm=T),
+         length_center=length-mean(length, na.rm=T),
+         gpt_center=gpt_surp-mean(gpt_surp, na.rm=T)) %>%
+  group_by(sentence,Story_Num,Sentence_Num) %>%
+  mutate(across(txl_surp:gpt_center,.names="past_{.col}", lag),
+         across(txl_surp:gpt_center,.names="past2_{.col}", ~lag(.x,n=2)),
+         across(txl_surp:gpt_center,.names="past3_{.col}", ~lag(.x,n=3)))
+
+```
+
+```{r}
+
+
+labelled_pre_error <- data_pre_error %>% inner_join(select_labs, by=c("word_num", "word", "sentence")) %>%
+  filter(word_num>1) %>%
+  mutate(Word_ID=as_factor(str_c(Story_Num, Word_In_Story_Num, sep="_")))
+
+```
+
+```{r maze-item-means}
+
+select_data <- read_rds("Data/maze_pre_error.rds") %>%  select(-starts_with("past2"), -starts_with("past3")) %>%
+  filter(across(everything(),~!is.na(.x)))
+
+
+item_mean_data <- select_data %>%
+  group_by(across(c(-subject, -rt))) %>%
+  summarize(rt=mean(rt)) %>%
+  ungroup()
+
+
+```
+
+## Step 3: analyze the data, using just LMs!

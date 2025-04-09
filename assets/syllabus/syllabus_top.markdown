@@ -83,5 +83,7 @@ Wednesday April 2: slides [with builds](assets/slides/2025-04-02-with-builds.pdf
 
 Monday April 7: slides [with builds](assets/slides/2025-04-07-with-builds.pdf) and [without builds](assets/slides/2025-04-07-without-builds.pdf); [R Markdown notebook](assets/resources/2025-04-07/practicum_start.Rmd)
 
+Monday April 7: slides [with builds](assets/slides/2025-04-09-with-builds.pdf) and [without builds](assets/slides/2025-04-09-without-builds.pdf); [R Markdown notebook](assets/resources/2025-04-09/notebook-2025-04-09.Rmd)
+
 
 
