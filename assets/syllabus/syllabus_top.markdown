@@ -85,5 +85,7 @@ Monday April 7: slides [with builds](assets/slides/2025-04-07-with-builds.pdf) a
 
 Wednesday April 9: slides [with builds](assets/slides/2025-04-09-with-builds.pdf) and [without builds](assets/slides/2025-04-09-no-builds.pdf); [R Markdown notebook](assets/resources/2025-04-09/notebook-2025-04-09.Rmd)
 
+Monday April 14: slides [with builds](assets/slides/2025-04-14-with-builds.pdf) and [without builds](assets/slides/2025-04-14-no-builds.pdf)
+
 
 
