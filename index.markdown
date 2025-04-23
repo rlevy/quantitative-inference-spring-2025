@@ -89,5 +89,7 @@ Monday April 14: slides [with builds](assets/slides/2025-04-14-with-builds.pdf) 
 
 Wednesday April 16: slides [with builds](assets/slides/2025-04-16-with-builds.pdf) and [without builds](assets/slides/2025-04-16-no-builds.pdf)
 
+Wednesday April 23: [slides](assets/slides/2025-04-23.pdf)
+
 
 
