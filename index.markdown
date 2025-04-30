@@ -93,6 +93,6 @@ Wednesday April 23: [slides](assets/slides/2025-04-23.pdf)
 
 Monday April 28: slides [with builds](assets/slides/2025-04-28-with-builds.pdf) and [without builds](assets/slides/2025-04-28-no-builds.pdf); [practicum part 1](assets/resources/2025-04-28/simulation1.R); [practicum part 2](assets/resources/2025-04-28/practicum-part-2.R)
 
-
+Wednesday April 30: slides [with builds](assets/slides/2025-04-30-with-builds.pdf) and [without builds](assets/slides/2025-04-30-no-builds.pdf)
 
 
