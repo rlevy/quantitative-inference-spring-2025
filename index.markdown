@@ -95,4 +95,6 @@ Monday April 28: slides [with builds](assets/slides/2025-04-28-with-builds.pdf) 
 
 Wednesday April 30: slides [with builds](assets/slides/2025-04-30-generalized-additive-models-with-builds.pdf) and [without builds](assets/slides/2025-04-30-generalized-additive-models-no-builds.pdf)
 
+Monday May 5: slides [with builds](assets/slides/2025-05-05-nonparametric-methods-with-builds.pdf) and [without builds](assets/slides/2025-nonparametric-methods-no-builds.pdf)
+
 
