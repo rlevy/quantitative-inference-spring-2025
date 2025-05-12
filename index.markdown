@@ -99,3 +99,5 @@ Monday May 5: slides [with builds](assets/slides/2025-05-05-nonparametric-method
 
 Wednesday May 7: slides [with builds](assets/slides/2025-05-07-with-builds.pdf) and [without builds](assets/slides/2025-05-07-no-builds.pdf)
 
+Monday May 12: slides [with builds](assets/slides/2025-05-12-with-builds.pdf) and [without builds](assets/slides/2025-05-12-no-builds.pdf)
+
